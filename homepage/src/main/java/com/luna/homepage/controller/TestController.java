@@ -17,13 +17,13 @@ public class TestController {
 	@Autowired
 	GuestbookService guestbookService;
 
-	@RequestMapping(value="/", method = RequestMethod.GET)
+	@RequestMapping(value="/test", method = RequestMethod.GET)
 	public String index(Model model) {
 		
 		List<GuestbookVo> contentList = guestbookService.listUp();
 		model.addAttribute("list",contentList);
 		
-		return "index";
+		return "testIndex";
 	}
 	
 }
