@@ -12,18 +12,15 @@ import com.luna.homepage.model.service.GuestbookService;
 import com.luna.homepage.model.vo.GuestbookVo;
 
 @Controller
-public class TestController {
+public class MainController {
 	
 	@Autowired
 	GuestbookService guestbookService;
 
-	@RequestMapping(value="/test", method = RequestMethod.GET)
-	public String index(Model model) {
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String index() {
 		
-		List<GuestbookVo> contentList = guestbookService.listUp();
-		model.addAttribute("list",contentList);
-		
-		return "testIndex";
+		return "home";
 	}
 	
 }
