@@ -23,4 +23,10 @@ public class MainController {
 		return "home";
 	}
 	
+	@RequestMapping(value="/detail", method = RequestMethod.GET)
+	public String detail() {
+		
+		return "detail";
+	}
+	
 }
