@@ -1,4 +1,11 @@
-<footer id="footer--box" class="text-center">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<footer class="footer">
+
+	<div class = "footerLogo">
+	
+	</div>
+
   <p>Created by luna🌗</p>
   <p>010-0101-0101</p>
   <p>서울시 종로구</p>

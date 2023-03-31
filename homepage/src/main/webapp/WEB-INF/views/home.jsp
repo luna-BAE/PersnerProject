@@ -2,10 +2,10 @@
 <meta charset="utf-8">
 <%@ include file="layout/header.jspf"%>
 
-<title>MAIN</title>
+<title>MAIN PAGE</title>
 </head>
 <body>
-
+<div class = "page">
 	<div class="main--wrap" name="main--sector">
 		<div class="main--image">
 			<img class="image" id="main--img" src="/image/main_studio.jpg">
@@ -45,19 +45,25 @@
 		<div class="maincontent--1">
 			<a href="#"><img src="/image/camera/camera-g3be5ddd3a_1920.jpg"></a>
 		</div>
-		<div id="maincontent--1--text">
-			<h1>실내촬영 초급자과정</h1>
+		<div class="maincontent--1--text">
+			<h1>test</h1>
+			<p>test</p>
 		</div>
 		<div class="maincontent--2">
 			<a href="#"><img src="/image/camera/lens-g15677d58d_1920.jpg"></a>
 		</div>
 		<div id="maincontent--2--text">
-			<h1>실내촬영 초급자과정</h1>
+			<h1>test</h1>
+			<p>test</p>
 		</div>
 
 		<div class="maincontent--3">
 			<a href="#"><img src="/image/camera/studio-g8d3638cb1_1920.jpg"></a>
 		</div>
+		<div class = "maincontent--3--text">
+			<h1>당신을 기다리고 있어요 :)</h1>
+		</div>
 	</div>
+</div>
 
-	<%@ include file="layout/footer.jspf"%>
+<%@ include file="layout/footer.jspf"%>
