@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <meta charset="utf-8">
-<%@ include file="layout/header.jspf"%>
+<%@ include file="../layout/header.jspf"%>
 
 <title>STUDIO DETAIL</title>
 </head>
@@ -56,4 +56,4 @@
 	</div>
 </html>
 
-<%@ include file="layout/footer.jspf"%>
+<%@ include file="../layout/footer.jspf"%>
