@@ -160,12 +160,15 @@ footer p {
 
 	/*메인콘텐츠2 텍스트2*/
 	#maincontent--2--text p {
-		position: absolute;
-		text-align: right;
+		position: relative;
+		text-align: left;
 		margin-left: 10%;
 		top: 50%;
 		font-size: 30px;
 		color: gray;
+		width: 800px;
+		margin-top: -15%;
+		margin-bottom: 10%;
 	}
 
 	/*메인콘텐츠2*/
@@ -274,6 +277,11 @@ footer p {
 	}
 	.card-body a:link{
 		color: yellow;
+	}
+	
+	/*방명록 카드*/
+	#guestbookCard {
+		width: 100%;
 	}
 }
 

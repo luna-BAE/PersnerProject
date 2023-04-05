@@ -23,10 +23,16 @@ public class MainController {
 		return "home";
 	}
 	
-	@RequestMapping(value="/detail", method = RequestMethod.GET)
+	@RequestMapping(value="studio/studioList", method = RequestMethod.GET)
 	public String detail() {
 		
-		return "detail";
+		return "studio/studioList";
+	}
+	
+	@RequestMapping(value="/guestbook", method = RequestMethod.GET)
+	public String guestbook() {
+		
+		return "guestbook/guestbookList";
 	}
 	
 }
