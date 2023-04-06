@@ -4,6 +4,6 @@
 <mapper
 	namespace="com.luna.homepage.model.mapper.StudioMapper">
 	<select id="listUpStudio" resultType="com.luna.homepage.model.vo.StudioVo">
-		select * from studio;
+		select studioPhoto from studio;
 	</select>
 </mapper>

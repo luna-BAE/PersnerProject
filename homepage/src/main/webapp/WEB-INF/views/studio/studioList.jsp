@@ -18,41 +18,18 @@
 			</div>
 
 			<div class="container">
-				<div class="card" id="studioDetail">
-					<img class="card-img-top" src="/image/studio/camera-g1a17990b3_1920.jpg">
-					<div class="card-body">
-						<h4 class="card-title">스튜디오 1</h4>
-						<p class="card-text">서울특별시 종로구 창신동</p>
-						<a href="#" class="detailButton">See Detail</a>
-					</div>
-				</div>
 
-				<div class="card" id="studioDetail">
-					<img class="card-img-top" src="/image/studio/camera-g1a17990b3_1920.jpg">
-					<div class="card-body">
-						<h4 class="card-title">스튜디오 1</h4>
-						<p class="card-text">서울특별시 종로구 창신동</p>
-						<a href="#" class="detailButton">See Detail</a>
+				<c:forEach items="${imgSrc}">
+					<div class="card" id="studioDetail">
+						<img class="card-img-top" src="${imgSrc.studioPhoto}">
+						<div class="card-body">
+							<h4 class="card-title">${imgSrc.studioName}</h4>
+							<p class="card-text">서울특별시 종로구 창신동</p>
+							<a href="#" class="detailButton">See Detail</a>
+						</div>
 					</div>
-				</div>
-
-				<div class="card" id="studioDetail">
-					<img class="card-img-top" src="/image/studio/camera-g1a17990b3_1920.jpg">
-					<div class="card-body">
-						<h4 class="card-title">스튜디오 1</h4>
-						<p class="card-text">서울특별시 종로구 창신동</p>
-						<a href="#" class="detailButton">See Detail</a>
-					</div>
-				</div>
-
-				<div class="card" id="studioDetail">
-					<img class="card-img-top" src="/image/studio/camera-g1a17990b3_1920.jpg">
-					<div class="card-body">
-						<h4 class="card-title">스튜디오 1</h4>
-						<p class="card-text">서울특별시 종로구 창신동</p>
-						<a href="#" class="detailButton">See Detail</a>
-					</div>
-				</div>
+				</c:forEach>
+				
 			</div>
 		</div>
 		<%@ include file="../layout/footer.jspf"%>
