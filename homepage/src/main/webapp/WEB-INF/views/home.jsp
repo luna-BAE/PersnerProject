@@ -68,6 +68,7 @@
 				<h1>당신을 기다리고 있어요 :)</h1>
 			</div>
 		</div>
-	</div>
-
 	<%@ include file="layout/footer.jspf"%>
+	</div>
+</body>
+</html>

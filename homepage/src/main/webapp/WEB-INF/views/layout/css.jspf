@@ -20,8 +20,10 @@ body {
 }
 
 .page {
+	position: relative;
+	height: auto;
 	min-height: 100%;
-	margin: 0 auto -200px;
+	padding-bottom: 1500px;
 }
 
 /*푸터*/
@@ -31,7 +33,7 @@ footer {
 	color: white;
 	height: 300px;
 	width: 100%;
-	margin-top: 60%;
+	bottom: 0;
 }
 
 footer p {
@@ -253,18 +255,18 @@ footer p {
 	}
 
 	/*스튜디오 카드 전체*/
-	.card {
+	#studioDetail {
 		width: 530px;
 		float: left;
 		margin: 0 auto;
 	}
 
 	/*스튜디오 카드 하위 div*/
-	.container div {
+	#studioDetail {
 		margin-left: 20px;
 		margin-top: 20px;
 	}
-
+	
 	/*스튜디오 상세보기 버튼*/
 	.detailButton {
 		background-color: gray;
