@@ -45,25 +45,20 @@ public class MainController {
 	@RequestMapping(value="studio/studioList", method = RequestMethod.GET)
 	public String img(@RequestParam Map<String, Object> commandMap, Model model) {
 		
-		List<Map<String, Object>> studioList = new ArrayList<Map<String, Object>>();
-		Map<String, Object> data = null;
-		Map<String, Object> resultMap = null;
-		byte[] arr = null;
-		String base64ToString = null;
+		List<Map<String, String>> studioDataList = new ArrayList<Map<String, String>>();
+		Map<String, String> data = null;
 		
-		List<StudioVo> studioPhoto = studioService.listUpStudio();
+		List<StudioVo> studioList = studioService.listUpStudio();
 		
-		for ( StudioVo photo : studioPhoto ) {
-			data = new HashMap<String, Object>();
-			resultMap = 
-			arr = (byte[]) resultMap.get("base64");
-			base64ToString = new String(arr);
-			data.put("studioPhoto", base64ToString);
-			studioList.add(data);
+		for ( StudioVo list : studioList ) {
+			data = new HashMap<String, String>();
+			data.put("studioName", list.getStudioName());
+			data.put("studioPhoto", list.getStudioPhoto());
+			data.put("studioAdd", list.getStudioAdd());
+			studioDataList.add(data);
 		}
 		
-		
-	    model.addAttribute("imgSrc",base64ToString);
+		model.addAttribute("studioList",studioList);
 		
 		return "studio/studioList";
 	}

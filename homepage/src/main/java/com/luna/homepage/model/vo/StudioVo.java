@@ -3,11 +3,11 @@ package com.luna.homepage.model.vo;
 public class StudioVo {
 	
 	private int no, studioPrice;
-	private String studioName, studioInfo, studioPhoto, studioManager;
+	private String studioName, studioInfo, studioPhoto, studioManager, studioAdd;
 	
 	public StudioVo() {}
 
-	public StudioVo(int no, int studioPrice, String studioName, String studioInfo, String studioPhoto, String studioManager) {
+	public StudioVo(int no, int studioPrice, String studioName, String studioInfo, String studioPhoto, String studioManager, String studioAdd) {
 		super();
 		this.no = no;
 		this.studioPrice = studioPrice;
@@ -15,6 +15,7 @@ public class StudioVo {
 		this.studioInfo = studioInfo;
 		this.studioPhoto = studioPhoto;
 		this.studioManager = studioManager;
+		this.studioAdd = studioAdd;
 	}
 
 	public int getNo() {
@@ -64,12 +65,21 @@ public class StudioVo {
 	public void setStudioManager(String studioManager) {
 		this.studioManager = studioManager;
 	}
+	
+	public String getStudioAdd() {
+		return studioAdd;
+	}
+
+	public void setStudioAdd(String studioAdd) {
+		this.studioAdd = studioAdd;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + no;
+		result = prime * result + ((studioAdd == null) ? 0 : studioAdd.hashCode());
 		result = prime * result + ((studioInfo == null) ? 0 : studioInfo.hashCode());
 		result = prime * result + ((studioManager == null) ? 0 : studioManager.hashCode());
 		result = prime * result + ((studioName == null) ? 0 : studioName.hashCode());
@@ -88,6 +98,11 @@ public class StudioVo {
 			return false;
 		StudioVo other = (StudioVo) obj;
 		if (no != other.no)
+			return false;
+		if (studioAdd == null) {
+			if (other.studioAdd != null)
+				return false;
+		} else if (!studioAdd.equals(other.studioAdd))
 			return false;
 		if (studioInfo == null) {
 			if (other.studioInfo != null)
@@ -117,7 +132,9 @@ public class StudioVo {
 	@Override
 	public String toString() {
 		return "StudioVo [no=" + no + ", studioPrice=" + studioPrice + ", studioName=" + studioName + ", studioInfo=" + studioInfo + ", studioPhoto=" + studioPhoto + ", studioManager=" + studioManager
-				+ "]";
+				+ ", studioAdd=" + studioAdd + "]";
 	}
+
+	
 	
 }
