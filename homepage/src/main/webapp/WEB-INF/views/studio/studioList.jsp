@@ -19,12 +19,12 @@
 
 			<div class="container">
 
-				<c:forEach items="${imgSrc}">
+				<c:forEach items="${studioList}">
 					<div class="card" id="studioDetail">
-						<img class="card-img-top" src="${imgSrc.studioPhoto}">
+						<img class="card-img-top" src="${studioList.studioPhoto}">
 						<div class="card-body">
-							<h4 class="card-title">${imgSrc.studioName}</h4>
-							<p class="card-text">서울특별시 종로구 창신동</p>
+							<h4 class="card-title">${studioList.studioName}</h4>
+							<p class="card-text">${studioList.studioAdd}</p>
 							<a href="#" class="detailButton">See Detail</a>
 						</div>
 					</div>
