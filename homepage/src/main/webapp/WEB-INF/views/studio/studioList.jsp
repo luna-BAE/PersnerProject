@@ -19,12 +19,12 @@
 
 			<div class="container">
 
-				<c:forEach items="${studioList}">
+				<c:forEach var = "list" items="${studioList}">
 					<div class="card" id="studioDetail">
-						<img class="card-img-top" src="${studioList.studioPhoto}">
+						<img class="card-img-top" src="${list.studioPhoto}">
 						<div class="card-body">
-							<h4 class="card-title">${studioList.studioName}</h4>
-							<p class="card-text">${studioList.studioAdd}</p>
+							<h4 class="card-title">${list.studioName}</h4>
+							<p class="card-text">${list.studioAdd}</p>
 							<a href="#" class="detailButton">See Detail</a>
 						</div>
 					</div>
