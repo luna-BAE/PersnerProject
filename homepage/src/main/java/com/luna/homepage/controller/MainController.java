@@ -43,7 +43,7 @@ public class MainController {
 	
 	// 사진 로딩 테스트용
 	@RequestMapping(value="studio/studioList", method = RequestMethod.GET)
-	public String img(@RequestParam Map<String, Object> commandMap, Model model) {
+	public String img(Model model) {
 		
 		List<Map<String, String>> studioDataList = new ArrayList<Map<String, String>>();
 		Map<String, String> data = null;
