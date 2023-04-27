@@ -23,7 +23,7 @@ body {
 	position: relative;
 	height: auto;
 	min-height: 100%;
-	padding-bottom: 1500px;
+	padding-bottom: 2000px;
 }
 
 /*푸터*/
